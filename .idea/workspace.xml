@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Ajout du design + login">
-      <change afterPath="$PROJECT_DIR$/public/img/meow.png" afterDir="false" />
+    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Update login + tailwind introduction">
+      <change afterPath="$PROJECT_DIR$/src/PPE4/MeowManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
@@ -177,7 +180,8 @@
       <workItem from="1614783266557" duration="2047000" />
       <workItem from="1614846401185" duration="4121000" />
       <workItem from="1614858928045" duration="1804000" />
-      <workItem from="1614865459218" duration="7288000" />
+      <workItem from="1614865459218" duration="7339000" />
+      <workItem from="1615297887043" duration="4652000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
@@ -214,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614784698131</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update login + tailwind introduction">
+      <created>1614873002847</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614873002847</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +241,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":tada: initial commit" />
@@ -237,9 +249,14 @@
     <MESSAGE value=":tada: test 3564t" />
     <MESSAGE value=":tada: test  de push" />
     <MESSAGE value="Ajout du design + login" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du design + login" />
+    <MESSAGE value="Update login + tailwind introduction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update login + tailwind introduction" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615305110852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615305110852" />
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1614783154628">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -256,10 +273,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614852110864" />
-    <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614786669686">
+    <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1614873004720">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614786669686" />
+    <state x="2472" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614873004720" />
     <state x="2680" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614783594359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
