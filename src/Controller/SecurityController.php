@@ -30,7 +30,8 @@ class SecurityController extends AbstractController
                 ['last_username' => $lastUsername],
                 ['error' => $error],
                 MeowManager::load(),
-                DesignManager::load()
+                DesignManager::load(),
+                ["ct_name" => MeowManager::$secutite]
             ));
     }
 

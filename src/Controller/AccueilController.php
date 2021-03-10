@@ -18,7 +18,8 @@ class AccueilController extends AbstractController
         return $this->render('accueil/index.html.twig',
             array_merge(
                 MeowManager::load(),
-                DesignManager::load()
+                DesignManager::load(),
+                ["ct_name" => MeowManager::$accueil]
             ));
     }
 }
