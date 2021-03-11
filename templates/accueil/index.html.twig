@@ -1,5 +1,19 @@
 {% extends 'base.html.twig' %}
 
-{#
-{% block body %}✅{% endblock %}
-#}
+
+{% block body %}
+
+    <div class="shadow-inner box-border bg-fixed bg-yellow-50 rounded-md mx-6 py-12 mb-6 text-center font-semibold">
+        <a>Ceci est un message de test</a>
+    </div>
+
+    <div class="grid grid-cols-4 grid-rows-3 px-24 py-8">
+        {% for product in products %}
+            <div class="flex bg-red-100 shadow rounded-md h-56 p-4 m-4">
+                <img src="{{ asset('img/meow.png') }}"/>
+                <a class="text-center">test {{ product.nomProduit }}✅</a>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

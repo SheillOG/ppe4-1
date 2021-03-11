@@ -13,6 +13,7 @@ class MeowManager
     public static function load()
     {
         return [
+            '_DEV' => true,
             '_name' => 'Meow Food',
             /*
               Categories

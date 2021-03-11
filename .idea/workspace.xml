@@ -20,17 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Update manager + nav bar">
-      <change afterPath="$PROJECT_DIR$/src/Repository/ProduitRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Manager/ProductManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/meow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/meow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccueilController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Produits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/DesignManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/DesignManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/MeowManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/MeowManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/StyleManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/StyleManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProduitRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProduitRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,17 +159,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\src\Manager" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img" />
+      <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\src\Manager" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -189,6 +188,7 @@
       <workItem from="1614865459218" duration="7339000" />
       <workItem from="1615297887043" duration="4652000" />
       <workItem from="1615368835550" duration="17702000" />
+      <workItem from="1615447089143" duration="12884000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
@@ -276,6 +276,14 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614783154628" />
+    <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615447951758">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615447951758" />
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615449299156">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615449299156" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615371976976">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -288,10 +296,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2660" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614852041281" />
-    <state x="2626" y="243" key="NewPhpClassDialog" timestamp="1615371589566">
+    <state x="2626" y="243" key="NewPhpClassDialog" timestamp="1615447521826">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2626" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615371589566" />
+    <state x="2626" y="243" key="NewPhpClassDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615447521826" />
     <state x="2381" y="165" key="SettingsEditor" timestamp="1614852110864">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
