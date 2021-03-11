@@ -59,11 +59,11 @@
                                 </div>
                             </div>
                         {% else %}
-                            <form method="post">
-                                <a href="{{ path("app_login") }}" class="{{ _button_login }}">
+                            <div class="relative">
+                                <a type="submit" href="{{ path("app_login") }}" class="{{ _button_login }}">
                                     {{ _login_name }}
                                 </a>
-                            </form>
+                            </div>
                         {% endif %}
                     </nav>
                 </div>
@@ -78,7 +78,7 @@
             <div class="pt-24 text-center font-semibold">
                 <footer class="py-8 bg-fixed bg-blue-100">
                     <div class="py-4 my-4 bg-fixed bg-green-100 shadow rounded-md mx-40">
-                        <a>Ceci est un message de test</a>
+                        <a>{{ _footer }}</a>
                     </div>
                 </footer>
             </div>

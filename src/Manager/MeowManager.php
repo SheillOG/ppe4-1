@@ -15,6 +15,8 @@ class MeowManager
         return [
             '_DEV' => true,
             '_name' => 'Meow Food',
+            '_footer' => 'Tout article acheté sur le site Meow Food ne sera pas remboursable.',
+
             /*
               Categories
             */
