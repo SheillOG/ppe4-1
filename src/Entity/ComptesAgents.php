@@ -59,5 +59,70 @@ class ComptesAgents
      */
     private $idprofil;
 
+    public function getIdagent(): ?int
+    {
+        return $this->idagent;
+    }
+
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(?string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    public function getUsername(): ?string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(string $username): self
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    public function getTelephone(): ?string
+    {
+        return $this->telephone;
+    }
+
+    public function setTelephone(?string $telephone): self
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function setPassword(?string $password): self
+    {
+        $this->password = $password;
+
+        return $this;
+    }
+
+    public function getIdprofil(): ?Profil
+    {
+        return $this->idprofil;
+    }
+
+    public function setIdprofil(?Profil $idprofil): self
+    {
+        $this->idprofil = $idprofil;
+
+        return $this;
+    }
+
 
 }

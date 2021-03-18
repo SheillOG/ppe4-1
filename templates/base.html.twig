@@ -11,6 +11,7 @@
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
             <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
             {#<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>#}
+
         {% endblock %}
         <meta charset="UTF-8">
         <link rel="icon" href="../public/img/meow.png" />
@@ -26,7 +27,6 @@
         {% endblock %}
     </head>
     <body>
-
         {% block navbar %}
             <div class="w-full text-gray-700 bg-white shadow-md">
                 <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -41,9 +41,9 @@
                         {% endif %}
                     </div>
                     <nav class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex justify-end md:flex-row">
-                        <a class="{{ _button_nav }} {% if ct_name == _accueil %}text-yellow-700{% endif %}" href="{{ path("accueil") }}">{{ _accueil }}</a>
-                        <a class="{{ _button_nav }} {% if ct_name == _account %}text-green-500{% endif %}" href="{{ path("accueil") }}">{{ _ressource }}</a>
-                        <a class="{{ _button_nav }} {% if ct_name == _account %}text-green-500{% endif %}" href="{{ path("accueil") }}">Panier</a>
+                        <a class="{{ _button_nav }} {% if ct_name == _accueil %}text-yellow-500{% endif %}" href="{{ path("accueil") }}">{{ _accueil }}</a>
+                        <a class="{{ _button_nav }} {% if ct_name == _ressource %}text-yellow-500{% endif %}" href="{{ path("accueil") }}">{{ _ressource }}</a>
+                        <a class="{{ _button_nav }} {% if ct_name == _panier %}text-yellow-500{% endif %}" href="{{ path("panier") }}">{{ _panier }}</a>
                         {% if app.user %}
                             <div @click.away="open = false" class="relative">
                                 <button @click="open = !open" class="{{ _button_logout }}">

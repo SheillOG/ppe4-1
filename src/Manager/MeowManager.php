@@ -6,6 +6,7 @@ class MeowManager
 {
 
     public static $accueil = 'Accueil';
+    public static $panier = 'Panier';
     public static $secutite = 'Securite';
     public static $ressource = 'Ressource';
     public static $account = 'Compte';
@@ -23,6 +24,9 @@ class MeowManager
             '_accueil' => MeowManager::$accueil,
             '_ressource' => MeowManager::$ressource,
             '_account' => MeowManager::$account,
+            '_panier' => MeowManager::$panier,
+
+            '_product_look' => 'Voir le produit',
 
             '_title' => 'Accueil',
             '_title_login' => 'MeowFood | Connexion',

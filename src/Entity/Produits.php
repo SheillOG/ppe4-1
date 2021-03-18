@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -82,11 +84,129 @@ class Produits
     private $idvente;
 
     /**
+     * @ORM\Column(type="text", nullable=true)
+     */
+    private $description;
+
+    /**
      * Constructor
      */
     public function __construct()
     {
         $this->idvente = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function getIdproduit(): ?int
+    {
+        return $this->idproduit;
+    }
+
+    public function getPrix(): ?string
+    {
+        return $this->prix;
+    }
+
+    public function setPrix(string $prix): self
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    public function getNomproduit(): ?string
+    {
+        return $this->nomproduit;
+    }
+
+    public function setNomproduit(string $nomproduit): self
+    {
+        $this->nomproduit = $nomproduit;
+
+        return $this;
+    }
+
+    public function getQuantite(): ?int
+    {
+        return $this->quantite;
+    }
+
+    public function setQuantite(?int $quantite): self
+    {
+        $this->quantite = $quantite;
+
+        return $this;
+    }
+
+    public function getImage(): ?string
+    {
+        return $this->image;
+    }
+
+    public function setImage(?string $image): self
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    public function getEvaluations(): ?float
+    {
+        return $this->evaluations;
+    }
+
+    public function setEvaluations(float $evaluations): self
+    {
+        $this->evaluations = $evaluations;
+
+        return $this;
+    }
+
+    public function getIdcategorie(): ?Categories
+    {
+        return $this->idcategorie;
+    }
+
+    public function setIdcategorie(?Categories $idcategorie): self
+    {
+        $this->idcategorie = $idcategorie;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Ventes[]
+     */
+    public function getIdvente(): Collection
+    {
+        return $this->idvente;
+    }
+
+    public function addIdvente(Ventes $idvente): self
+    {
+        if (!$this->idvente->contains($idvente)) {
+            $this->idvente[] = $idvente;
+        }
+
+        return $this;
+    }
+
+    public function removeIdvente(Ventes $idvente): self
+    {
+        $this->idvente->removeElement($idvente);
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(?string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
     }
 
 }

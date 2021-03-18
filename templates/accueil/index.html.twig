@@ -8,28 +8,29 @@
         <p>Veuillez créer un ticket en cas de problème.</p>
     </div>
 
-
-    <div class="grid grid-cols-4 grid-rows-3 px-36 py-6">
+    <div class="grid grid-cols-4 grid-rows-3 px-36 py-8">
         {% for product in products %}
 
-            <div class="max-w-xs rounded overflow-hidden shadow-lg mb-8" style = "box-shadow: 0 0 10px #0092ff ">
+            <div class="max-w-xs rounded overflow-hidden shadow-lg mb-8 " style = "box-shadow: 0 0 10px #0092ff ">
                 <div class=" m-2 h-3/6" style = "box-shadow:  0 1px 10px #fd1d1d">
                     <img class="w-full h-full" src="{{ asset(product.image) }}" />
                 </div>
                 <div class="px-6 py-1 text-center">
                     <div class="font-bold text-xl mb-2 {% if product.quantite <= 0 %} line-through {% endif %}">{{ product.nomProduit }}</div>
-                    <p class="text-grey-darker text-base">C'est le best menu des menus. Il est trop bon wallah achète bg.</p>
+                    <p class="text-grey-darker text-base">{{ product.description }}</p>
                     <span class="inline-block bg-grey-lighter rounded-full px-3 py-2 text-sm font-semibold {% if product.quantite <= 0 %} text-red-600 {% endif %}text-grey-darker mr-2 ">Stock: {% if product.quantite <= 0 %} RUPTURE {% else %} {{ product.quantite }} {% endif %}</span>
                     {% if product.quantite > 0 %}
                         <span class="inline-block bg-grey-lighter rounded-full px-3 py-2 text-sm font-semibold text-grey-darker mr-2 ">EUR {{ product.prix }} €</span>
                     {% endif %}
-                    <button type="submit" class="{% if product.quantite <= 0 %} line-through {% endif %} overflow-hidden block mx-auto text-lg font-semibold bg-red-500 w-4/6 text-white rounded-lg px-2 py-2 shadow-xl hover:bg-red-600 focus:outline-none focus:shadow-outline">
-                        Voir le produit
-                    </button>
+                    <a type="submit" href="{{ path("app_login") }}" class="{{ _button_product }} {% if product.quantite <= 0 %} line-through {% endif %}">
+                        {{ _product_look }}
+                    </a>
+
                 </div>
             </div>
 
         {% endfor %}
+
 
     </div>
 

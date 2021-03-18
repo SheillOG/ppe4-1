@@ -13,6 +13,7 @@ class DesignManager
             '_button_login' => StyleManager::$button_login,
             '_button_logout' => StyleManager::$button_logout,
             '_button_nav' => StyleManager::$button_nav,
+            '_button_product' => StyleManager::$button_product,
         ];
     }
 }

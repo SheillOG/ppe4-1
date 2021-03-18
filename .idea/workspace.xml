@@ -19,11 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Update">
-      <change afterPath="$PROJECT_DIR$/public/img/menu_best_of.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/menu_maxi_best_of.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/promo-mcdo.jpg" afterDir="false" />
+    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Update de l'accueil">
+      <change afterPath="$PROJECT_DIR$/public/img/maxi/cbo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/normal/cbo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PanierController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/panier/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/menu_best_of.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/normal/bigtasty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/menu_maxi_best_of.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/maxi/bigmac.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/meow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/meow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ComptesAgents.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ComptesAgents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Produits.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Produits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Profil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Profil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Ventes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Ventes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Manager/DesignManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/DesignManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/MeowManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/MeowManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/StyleManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/StyleManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/accueil/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
@@ -166,6 +177,8 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img" />
+      <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img\normal" />
+      <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img\maxi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\k.muscat\PhpstormProjects\Mon PPE4\public\img" />
@@ -187,7 +200,11 @@
       <workItem from="1614865459218" duration="7339000" />
       <workItem from="1615297887043" duration="4652000" />
       <workItem from="1615368835550" duration="17702000" />
-      <workItem from="1615447089143" duration="26354000" />
+      <workItem from="1615447089143" duration="26373000" />
+      <workItem from="1615903587954" duration="3607000" />
+      <workItem from="1615972529436" duration="6467000" />
+      <workItem from="1615984086074" duration="3247000" />
+      <workItem from="1616052199434" duration="1488000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
@@ -245,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615459993118</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update de l'accueil">
+      <created>1615477736772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615477736772</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,33 +296,34 @@
     <MESSAGE value="Update login + tailwind introduction" />
     <MESSAGE value="Update manager + nav bar" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Update de l'accueil" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update de l'accueil" />
   </component>
   <component name="WindowStateProjectService">
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615305110852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1615305110852" />
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1614783154628">
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1615974845339">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614783154628" />
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615974845339" />
     <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615447951758">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615447951758" />
-    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615449299156">
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615982854100">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615449299156" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615371976976">
+    <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615982854100" />
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615991010729">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615371976976" />
-    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1615391543302">
+    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615991010729" />
+    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog" timestamp="1616057563347">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615391543302" />
+    <state x="2012" y="92" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616057563347" />
     <state x="2660" y="261" key="FileChooserDialogImpl" timestamp="1614852041281">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -311,10 +336,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614852110864" />
-    <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1615459997932">
+    <state x="2472" y="240" key="Vcs.Push.Dialog.v2" timestamp="1616057552870">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615459997932" />
+    <state x="2472" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616057552870" />
     <state x="2680" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614783594359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
