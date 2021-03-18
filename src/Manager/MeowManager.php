@@ -6,9 +6,11 @@ class MeowManager
 {
 
     public static $accueil = 'Accueil';
+    public static $produit = 'Produits';
+    public static $produit_show = 'Produit Show';
+    public static $produit_edit = 'Produit Edit';
     public static $panier = 'Panier';
     public static $secutite = 'Securite';
-    public static $ressource = 'Ressource';
     public static $account = 'Compte';
 
     public static function load()
@@ -22,8 +24,8 @@ class MeowManager
               Categories
             */
             '_accueil' => MeowManager::$accueil,
-            '_ressource' => MeowManager::$ressource,
             '_account' => MeowManager::$account,
+            '_produit' => MeowManager::$produit,
             '_panier' => MeowManager::$panier,
 
             '_product_look' => 'Voir le produit',

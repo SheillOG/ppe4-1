@@ -42,7 +42,7 @@
                     </div>
                     <nav class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex justify-end md:flex-row">
                         <a class="{{ _button_nav }} {% if ct_name == _accueil %}text-yellow-500{% endif %}" href="{{ path("accueil") }}">{{ _accueil }}</a>
-                        <a class="{{ _button_nav }} {% if ct_name == _ressource %}text-yellow-500{% endif %}" href="{{ path("accueil") }}">{{ _ressource }}</a>
+                        <a class="{{ _button_nav }} {% if ct_name == _produit %}text-yellow-500{% endif %}" href="{{ path("produits") }}">{{ _produit }}</a>
                         <a class="{{ _button_nav }} {% if ct_name == _panier %}text-yellow-500{% endif %}" href="{{ path("panier") }}">{{ _panier }}</a>
                         {% if app.user %}
                             <div @click.away="open = false" class="relative">
