@@ -2,7 +2,7 @@
 
 namespace App\Security;
 
-use App\Entity\ClientUser;
+use App\Entity\Client;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -67,7 +67,7 @@ class UserAuthenticator extends AbstractFormLoginAuthenticator implements Passwo
             throw new InvalidCsrfTokenException();
         }
 
-        $user = $this->entityManager->getRepository(ClientUser::class)->findOneBy(['email' => $credentials['email']]);
+        $user = $this->entityManager->getRepository(Client::class)->findOneBy(['email' => $credentials['email']]);
 
         if (!$user) {
             // fail authentication with a custom error

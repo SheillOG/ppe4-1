@@ -2,7 +2,7 @@
 
 namespace App\Repository;
 
-use App\Entity\ClientUser;
+use App\Entity\Client;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
@@ -10,16 +10,16 @@ use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @method ClientUser|null find($id, $lockMode = null, $lockVersion = null)
- * @method ClientUser|null findOneBy(array $criteria, array $orderBy = null)
- * @method ClientUser[]    findAll()
- * @method ClientUser[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Client|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Client|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Client[]    findAll()
+ * @method Client[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class ClientUserRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
+class ClientRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, ClientUser::class);
+        parent::__construct($registry, Client::class);
     }
 
     /**
@@ -27,7 +27,7 @@ class ClientUserRepository extends ServiceEntityRepository implements PasswordUp
      */
     public function upgradePassword(UserInterface $user, string $newEncodedPassword): void
     {
-        if (!$user instanceof ClientUser) {
+        if (!$user instanceof Client) {
             throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', \get_class($user)));
         }
 
@@ -37,7 +37,7 @@ class ClientUserRepository extends ServiceEntityRepository implements PasswordUp
     }
 
     // /**
-    //  * @return ClientUser[] Returns an array of ClientUser objects
+    //  * @return Client[] Returns an array of Client objects
     //  */
     /*
     public function findByExampleField($value)
@@ -54,7 +54,7 @@ class ClientUserRepository extends ServiceEntityRepository implements PasswordUp
     */
 
     /*
-    public function findOneBySomeField($value): ?ClientUser
+    public function findOneBySomeField($value): ?Client
     {
         return $this->createQueryBuilder('c')
             ->andWhere('c.exampleField = :val')

@@ -40,9 +40,9 @@ class Ventes
     /**
      * @var \Clients
      *
-     * @ORM\ManyToOne(targetEntity="Clients")
+     * @ORM\ManyToOne(targetEntity="Client")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idClient", referencedColumnName="idClient")
+     *   @ORM\JoinColumn(name="idClient", referencedColumnName="id")
      * })
      */
     private $idclient;

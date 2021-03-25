@@ -46,13 +46,17 @@ class ProduitsController extends AbstractController
             $entityManager->persist($produit);
             $entityManager->flush();
 
-            return $this->redirectToRoute('produits_index');
+            return $this->redirectToRoute('produits');
         }
 
-        return $this->render('produits/new.html.twig', [
-            'produit' => $produit,
-            'form' => $form->createView(),
-        ]);
+
+        return $this->render('produits/new.html.twig',  array_merge(
+            MeowManager::load(),
+            DesignManager::load(),
+            ["produit" => $produit],
+            ["ct_name" => MeowManager::$produit],
+            ["form" => $form->createView(),]
+        ));
     }
 
     /**
@@ -79,7 +83,7 @@ class ProduitsController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('produits_index');
+            return $this->redirectToRoute('produits');
         }
 
         return $this->render('produits/edit.html.twig', array_merge(
@@ -102,6 +106,6 @@ class ProduitsController extends AbstractController
             $entityManager->flush();
         }
 
-        return $this->redirectToRoute('produits_index');
+        return $this->redirectToRoute('produits');
     }
 }
