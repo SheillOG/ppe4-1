@@ -6,9 +6,13 @@ use App\Entity\Client;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @IsGranted("ROLE_ADMIN")
+ */
 class DashboardController extends AbstractDashboardController
 {
     /**
@@ -22,14 +26,15 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Ppe 4');
+            ->setTitle('Meow Shop');
     }
 
     public function configureMenuItems(): iterable
     {
-        yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
-        yield MenuItem::section('Accueil');
-        yield MenuItem::linkToCrud('Clients', 'fa fa-user', Client::class);
-        // yield MenuItem::linkToCrud('The Label', 'fas fa-list', EntityClass::class);
+        return
+            [MenuItem::linkToRoute('Accueil', 'fa fa-home', 'accueil'),
+            MenuItem::section('Accueil'),
+            MenuItem::linkToCrud('Clients', 'fas fa-user', Client::class)
+         ];
     }
 }

@@ -49,6 +49,11 @@ class Client implements UserInterface
      */
     private $telephone;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $pseudo;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -164,5 +169,22 @@ class Client implements UserInterface
         $this->telephone = $telephone;
 
         return $this;
+    }
+
+    public function setUsername(string $username): self
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    public function setPseudo($pseudo): void
+    {
+        $this->pseudo = $pseudo;
+    }
+
+    public function getPseudo()
+    {
+        return $this->pseudo;
     }
 }

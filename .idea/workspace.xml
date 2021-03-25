@@ -19,8 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Refonte de Clients.php">
+    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Ajout du pannel admin (EasyAdmin)">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +144,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pFd39FKzIr7lzhzRHKG8WbzZ0I" />
@@ -190,7 +197,7 @@
       <workItem from="1616062176491" duration="10332000" />
       <workItem from="1616503448594" duration="1317000" />
       <workItem from="1616506251036" duration="6000" />
-      <workItem from="1616677774534" duration="2971000" />
+      <workItem from="1616677774534" duration="7636000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
@@ -276,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616682363812</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Ajout du pannel admin (EasyAdmin)">
+      <created>1616682806191</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616682806191</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +320,8 @@
     <MESSAGE value="Update de l'accueil" />
     <MESSAGE value="Update accueil/produit + Ajout du ProduitsController.php" />
     <MESSAGE value="Refonte de Clients.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refonte de Clients.php" />
+    <MESSAGE value="Ajout du pannel admin (EasyAdmin)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du pannel admin (EasyAdmin)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615305110852">
@@ -317,10 +332,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615974845339" />
-    <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1615447951758">
+    <state x="2405" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616686066118">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2405" y="190" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615447951758" />
+    <state x="2405" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616686066118" />
     <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1615982854100">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -329,10 +344,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616073105414" />
-    <state x="2004" y="117" width="1736" height="856" key="DirDiffDialog" timestamp="1616682565490">
+    <state x="2004" y="117" width="1736" height="856" key="DirDiffDialog" timestamp="1616685628098">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2004" y="117" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616682565490" />
+    <state x="2004" y="117" width="1736" height="856" key="DirDiffDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616685628098" />
     <state x="2660" y="261" key="FileChooserDialogImpl" timestamp="1614852041281">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -345,10 +360,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616504979019" />
-    <state x="2488" y="230" key="Vcs.Push.Dialog.v2" timestamp="1616682366459">
+    <state x="2488" y="230" key="Vcs.Push.Dialog.v2" timestamp="1616682809246">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2488" y="230" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616682366459" />
+    <state x="2488" y="230" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616682809246" />
     <state x="2680" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614783594359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
