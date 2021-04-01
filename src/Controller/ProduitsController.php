@@ -112,4 +112,16 @@ class ProduitsController extends AbstractController
 
         return $this->redirectToRoute('produits');
     }
+
+    /**
+     * @Route("/{idproduit}/remove", name="produits_delete", methods={"POST"})
+     */
+    public function deleteTest(Produits $produit): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->remove($produit);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('produits');
+    }
 }

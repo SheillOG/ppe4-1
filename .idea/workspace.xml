@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Debut du produits liste">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/api/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduitsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,6 +199,8 @@
       <workItem from="1617102601478" duration="4000" />
       <workItem from="1617102774257" duration="8000" />
       <workItem from="1617266714631" duration="2114000" />
+      <workItem from="1617269186892" duration="611000" />
+      <workItem from="1617275053945" duration="4581000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
