@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Ajout du pannel admin (EasyAdmin)">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="d5d91d1c-3bb1-4145-bc16-23a3a3e18e48" name="Default Changelist" comment="Debut du produits liste">
+      <change afterPath="$PROJECT_DIR$/src/Controller/ApiController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/api/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Client.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Client.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProduitsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProduitsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +196,10 @@
       <workItem from="1616062176491" duration="10332000" />
       <workItem from="1616503448594" duration="1317000" />
       <workItem from="1616506251036" duration="6000" />
-      <workItem from="1616677774534" duration="7636000" />
+      <workItem from="1616677774534" duration="7668000" />
+      <workItem from="1617102601478" duration="4000" />
+      <workItem from="1617102774257" duration="8000" />
+      <workItem from="1617266714631" duration="2114000" />
     </task>
     <task id="LOCAL-00001" summary=":tada: initial commit">
       <created>1614783472517</created>
@@ -290,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616682806191</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Debut du produits liste">
+      <created>1616687350951</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616687350951</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +330,8 @@
     <MESSAGE value="Update accueil/produit + Ajout du ProduitsController.php" />
     <MESSAGE value="Refonte de Clients.php" />
     <MESSAGE value="Ajout du pannel admin (EasyAdmin)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du pannel admin (EasyAdmin)" />
+    <MESSAGE value="Debut du produits liste" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debut du produits liste" />
   </component>
   <component name="WindowStateProjectService">
     <state x="732" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1615305110852">
@@ -340,9 +350,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1615982854100" />
-    <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616073105414">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617267707900">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617267707900" />
     <state x="2610" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616073105414" />
     <state x="2004" y="117" width="1736" height="856" key="DirDiffDialog" timestamp="1616685628098">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -360,10 +371,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616504979019" />
-    <state x="2488" y="230" key="Vcs.Push.Dialog.v2" timestamp="1616682809246">
+    <state x="2488" y="230" key="Vcs.Push.Dialog.v2" timestamp="1616687354493">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2488" y="230" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616682809246" />
+    <state x="2488" y="230" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616687354493" />
     <state x="2680" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1614783594359">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

@@ -6,12 +6,16 @@ use App\Entity\Produits;
 use App\Form\ProduitsType;
 use App\Manager\DesignManager;
 use App\Manager\MeowManager;
-use App\Manager\ProductManager;
 use App\Repository\ProduitRepository;
+use phpDocumentor\Reflection\DocBlock\Serializer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\Encoder\JsonEncoder;
+use Symfony\Component\Serializer\Encoder\XmlEncoder;
+use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
+
 
 /**
  * @Route("/produits")
