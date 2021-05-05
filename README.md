@@ -22,8 +22,8 @@ Presque terminées, les opérations suivantes doivent être effectuées:
 
 ### Installation ✏️
 ```sh
-mkdir PPE3
-cd /PPE3
+mkdir PPE4
+cd /PPE4
 git clone -b https://github.com/AndrobaL/PPE4
 ```
 
